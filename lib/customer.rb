@@ -13,7 +13,6 @@ class Customer
   end
   
   def new_meal(waiter, total, tip)
-    #initialize(waiter, customer, total, tip)
-    Meal.new(x, self, )
+    Meal.new(waiter, self, total, tip)
   end
 end
