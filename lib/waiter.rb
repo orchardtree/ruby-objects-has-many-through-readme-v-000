@@ -22,7 +22,13 @@ class Waiter
   end
   
   def best_tipper 
-    Meal.all.select{|meal| meal.waiter == self}
+    x = []
+    Meal.all.each do |meal| 
+      if meal.waiter == self
+        x << meal
+      end
+    end
+    x.sort{|meal| by
     binding.pry
   end
 end
