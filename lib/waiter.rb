@@ -28,7 +28,7 @@ class Waiter
         x << meal
       end
     end
-    x.sort{|meal| by
+    x.sort_by!{|meal| by
     binding.pry
   end
 end
