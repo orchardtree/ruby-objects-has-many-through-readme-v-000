@@ -17,6 +17,6 @@ class Customer
   end
   
   def meals 
-    Meal.all.select{|meal|
+    Meal.all.select{|meal| meal.
   end
 end
