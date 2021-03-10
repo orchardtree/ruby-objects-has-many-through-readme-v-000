@@ -22,13 +22,15 @@ class Waiter
   end
   
   def best_tipper 
-    x = []
+    waiter_meals = []
     Meal.all.each do |meal| 
       if meal.waiter == self
-        x << meal
+        waiter_meals << meal
       end
     end
-    x.sort_by! {|meal| by
-    binding.pry
+    #a.sort_by! {|element| element.size }
+    waiter_meals.sort_by! {|meal| meal.tip}
+    waiter_meals.last
+    #binding.pry
   end
 end
