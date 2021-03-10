@@ -21,11 +21,13 @@ class Customer
     Meal.all.select{|meal| meal.customer == self}
   end
   
-  def waiters 
-    Meal.all.select do |meal| 
+  def waiters
+    waiters = []
+    Meal.all.each do |meal| 
       if meal.customer == self
-        meal.waiter
+        waiters << meal.waiter
       end
     end
+    waiters
   end
 end
