@@ -30,7 +30,7 @@ class Waiter
     end
     #a.sort_by! {|element| element.size }
     waiter_meals.sort_by! {|meal| meal.tip}
-    waiter_meals.last
+    waiter_meals.last.customer
     binding.pry
   end
 end
