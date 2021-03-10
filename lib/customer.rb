@@ -27,6 +27,5 @@ class Customer
         meal.waiter
       end
     end
-    binding.pry
   end
 end
